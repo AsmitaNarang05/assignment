@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/test.css" rel="stylesheet" type="text/css"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<title>BreakInterview</title>
+</head>
+
+<body>
+<header id="#hideme">
+<div class="intern_header_section">
+<div class="intern_main_section">
+<div class="intern_logo">
+<a href="#"><span>Break</span>Interview</a>
+</div>
+<div class="toggle pull-right">
+<i class="fa fa-bars menu" aria-hidden="true"></i>
+</div>
+</div>
+<div class="intern_menus">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Tutorial</a></li>
+<li><a href="#">Practice</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Interview</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Login</a></li>
+<li><a href="signup.html"  target="_blank" class="sign">Sign Up</a></li>
+</ul>
+</div>
+</div>
+</header>
+<div class="intern_banner" id="hideme">
+<h1>Learn Without Complexity!</h1>
+<h6>LEARN . PRACTICE . ACHIEVE</h6>
+</div>
+<div class="intern_portfolio" id="hideme2">
+<div class="container">
+<div class="col-sm-6">
+<div class="intern_single">
+<div class="relative">
+<div class="overlay">
+</div>
+<img src="images/6g0kjwnbhxg-luis-llerena.jpg" width="600" height="400"/>
+<div class="intern_text2">
+<h3>Tutorial</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="intern_double">
+<div class="relative2">
+<div class="overlay2">
+</div>
+<img src="images/6g0kjwnbhxg-luis-llerena.jpg" width="600" height="400"/>
+<div class="intern_text">
+<h3>Practice</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="intern_thumbnail" id="hideme3">
+<div class="container">
+<div class="col-sm-4">
+<div class="intern_access">
+<i class="fa fa-globe" aria-hidden="true"></i>
+<h4>Unlimited Access </h4>
+<p>Choose what you'd like to learn from our extensive subscription library.</p>
+</div>
+</div>
+<Div class="col-sm-4">
+<i class="fa fa-bullhorn" aria-hidden="true"></i>
+<h4>Expert Teachers </h4>
+<p>Learn from industry experts who are passionate about teaching.</p>
+</Div>
+<div class="col-sm-4">
+<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+<h4>Learn Anywhere </h4>
+<p>Switch between your computer, tablet, or mobile device.</p>
+</div>
+</div>
+</div>
+<div class="intern_top_contents" id="hideme4">
+<div class="container">
+<div class="header_line">
+<h3><i>Browse Our Top Contents</i></h3>
+</div>
+<div class="col-sm-4">
+<div class="title">
+<a class="list-item-grp">Tutorial</a>
+<a class="item-grp">C</a>
+<a class="item-grp">PHP</a>
+<a class="item-grp">HTML</a>
+<a class="item-g">More...</a>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="title">
+<a class="list-item-grp">Practice</a>
+<a class="item-grp">C++</a>
+<a class="item-grp">JavaScript</a>
+<a class="item-grp">PHP</a>
+<a class="item-g">More...</a>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="title">
+<a class="list-item-grp">Interview</a>
+<a class="item-grp">Data Structures</a>
+<a class="item-grp">Puzzles</a>
+<a class="item-g">More...</a>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_section" id="hideme5">
+<div class="container">
+<div class="col-sm-3">
+<div class="links">
+<h3>Get Started</h3>
+<ul>
+<li>Home</li>
+<li>Contact Us</li>
+<li>Careers</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-6">
+</div>
+<div class="col-sm-3">
+<div class="social_icons">
+<ul>
+<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+<li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="copy_section" id="hideme6">
+<p>© 2017 BreakInerview</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="js/jquery.jscroll.js"></script>
+ <script type="text/javascript">
+ $(document).ready(function(){
+ $('.menu').click(function(){
+ $('ul').toggleClass('active');
+							})
+ })
+</script> 
+<script type="text/javascript">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('#hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('#hideme2').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('#hideme3').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('#hideme4').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('#hideme5').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});</script>
+
+</body>
+</html>
